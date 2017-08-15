@@ -15,9 +15,11 @@
 
         <!-- My Stylesheet -->
         <link rel="stylesheet" type="text/css" href="styles.css">
+
     </head>
 
     <body>
+    <div id="site">
 
         <!-- Opening Entire site in Container Fluid -->
 
@@ -33,45 +35,37 @@
 
                     <!-- Brand and toggle get grouped for better mobile display -->
         
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                                 <span class="sr-only">Toggle navigation</span>
-                                 <span class="icon-bar"></span>
-                                 <span class="icon-bar"></span>
-                                 <span class="icon-bar"></span>
-                            </button>
-                            <div>
-                                <a class="navbar-brand-center" href="#">
-                                    <img alt="Brand" src="mobile-images/pine-jewelry-logo.png">
-                                </a>
-                            </div>
-
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-
-                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                                <ul class="nav navbar-default navbar-right">
-                                    <li><a href="#">About</a>
-                                    </li>
-                                    <li><a href="#">Contact</a>
-                                    </li>
-                                    <li><a href="#">Shop Etsy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.navbar-collapse -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div>
+                            <a class="navbar-brand-center" href="#"><img alt="Brand" src="mobile-images/pine-jewelry-logo.png"></a>
                         </div>
-                        <!-- /.navbar-header -->
-                
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-default">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Shop Etsy</a></li>
+                            </ul>
+                        </div><!--/.navbar-collapse -->
+                    </div><!-- /.navbar-header -->
+                </nav>
 
 
                 <header>
                     <h1>Pine Jewelry</h1>
-                    <p class="space">Hand crafted jewelry made with
-                        <br>love in Flagstaff, Arizona</p>
+                    <p class="space">Hand crafted jewelry made with<br>love in Flagstaff, Arizona</p>
                     <i class="fa fa-play-circle" aria-hidden="true"></i>
                     <p class="play-video">Play Video</p>
                 </header>
-                </nav>
+
             </section>
 
             <!-- Section-2 Shop On Etsy -->
@@ -84,7 +78,8 @@
 
             <section class="section-3">
                 <img src="mobile-images/mobile-woman-key-necklace.jpg">
-                <h2>Every piece is unique<br>tying in new and old</h2>
+                <div class="text-group">
+                <h2>Every piece is unique<br>tieing in new and old</h2>
                 <p>Every Pine Jewelry piece is created with great atten-<br>tion to detail using a combination of both new items,<br>antiques, and recycled materials. This means every<br>piece is unique.</p>
                 <ul>
                     <li><i class="fa fa-snowflake-o" aria-hidden="true"></i>
@@ -102,6 +97,7 @@
                     <li><i class="fa fa-key" aria-hidden="true"></i>
                     </li>
                 </ul>
+                </div>
             </section>
 
             <!-- Section 4 Beads Picture -->
@@ -174,8 +170,8 @@
 
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-            <!-- Closing Body Tag -->
-
-    </body>
+            
+    </div><!-- Closing #site section -->
+    </body><!-- Closing Body Tag -->
 
 </html>
