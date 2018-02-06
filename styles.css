@@ -1,5 +1,12 @@
-/* Every Size Screen */
- body {
+/* 
+
+********** Styles for Pine Jewelry **********
+
+*/
+
+/*********** Every Size Screen ***********/
+
+body {
     margin: 0;
     background-color: #fff;
     font-family:'Montserrat', sans-serif;
@@ -7,7 +14,9 @@
 img {
     max-width: 100%;
 }
-/* Logo on main screen */
+
+/*********** Logo on main screen ***********/
+
 @media only screen and (max-width: 320px) {
     #site {
         display: none;
@@ -19,17 +28,20 @@ img {
         background-position: center;
     }
 }
-/* Mobile View */
+
+/*********** Mobile View ***********/
 
  @media only screen and (min-width: 320px) {
      
-    /* Section 1 - Including the navbar, icon and play video button*/
+    /*********** Section 1 
+    ***** - Including the navbar, icon and play video button ***********/
     
     .icon-bar {
         background-color: #ad955a;
     }
     
-    /* .section-1 Settings - Including ENTIRE SECTION */
+    /*********** .section-1 Settings 
+    ***** - Including ENTIRE SECTION ***********/
     
     .section-1 {
         background-image: url(mobile-images/mobile-backgroundimg1.jpg);
@@ -38,33 +50,37 @@ img {
         text-align: center;
         height: 700px;
     }
-    .section-1 img {
-        margin: 20px;
-        padding-left: 55px;
+    .flex-box {
+        display: flex;
+        flex-direction: row;
     }
     
-    /* Navbar Settings*/
+    /*********** Navbar Settings*/
     
-    .navbar-brand {
-        float: none;
+    .navbar-brand-img {
+        margin-top: 20px;
+        flex-grow: 1;
+        order: 1;
+    }
+    .navbar-brand-icon-bar {
+        flex-grow: 1;
+        order: 2;
     }
     .navbar {
-        margin-bottom: -20px;
+        margin-bottom: 20px;
     }
     .navbar-collapse {
+        display: none;
         float: right;
-        width: 100%;
     }
     .navbar-default {
         background-color: #ad955a;
     }
-    .navbar-collapse {
-        max-width: 30%;
-    }
     .nav li a {
         color: #ffffff;
     }
-    /* Header Settings - Including words in header and play video button*/
+
+    /** Header Settings - Including words in header and play video button*/
     
     header {
         margin-top: 100px;
@@ -192,25 +208,26 @@ img {
     }
 }
 
-/* Tablet View */
+/*********** Tablet View ***********/
 
 @media only screen and (min-width: 768px) {
     body {
         background-color: #ededed;
     }
-    .brand {
-        display: inline-block;
+    .navbar, .navbar-collapse {
+        margin: 20px;
     }
-    .navbar-right {
-        float: right;
+    .navbar-collapse ul {
+        display: inline-block;
     }
     
 }
 
-/* Desktop View */
+/*********** Desktop View ***********/
 
  @media only screen and (min-width: 992px) and (max-width: 1400px) {
     body {
         background-color: #ededed;
     }
+
 }
