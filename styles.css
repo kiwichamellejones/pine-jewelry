@@ -136,10 +136,15 @@ img {
     /* .section-3 Settings including woman necklace pic and font awesome icons*/
     
     .text-group {
-        
+        order: 1;
+        margin: 150px;
+    }
+    .woman-key-necklace {
+        order: 2;
     }
     .section-3 {
         text-align: center;
+        display: flex;
     }
     .section-3 h2 {
         font-size: 20px;
