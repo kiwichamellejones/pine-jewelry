@@ -74,7 +74,14 @@ img {
         float: right;
     }
     .navbar-default {
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .navbar-default li a:hover {
         background-color: #ad955a;
+    }
+    #shop-on-etsy {
+        border: 1px solid #fff;
     }
     .nav li a {
         color: #ffffff;
@@ -214,12 +221,19 @@ img {
     body {
         background-color: #ededed;
     }
+
+    /*********** Navbar Settings ***********/
+    
     .navbar, .navbar-collapse {
         margin: 20px;
     }
     .navbar-collapse ul {
-        display: inline-block;
+        display: flex;
+
     }
+
+    /*********** Settings ***********/
+    
     
 }
 
