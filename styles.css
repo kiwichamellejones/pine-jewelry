@@ -136,15 +136,11 @@ img {
     /* .section-3 Settings including woman necklace pic and font awesome icons*/
     
     .text-group {
-<<<<<<< HEAD
-    
-=======
         order: 1;
         margin: 150px;
     }
     .woman-key-necklace {
         order: 2;
->>>>>>> updates-2/5/2018
     }
     .section-3 {
         text-align: center;
