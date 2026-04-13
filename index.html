@@ -1,200 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pine Jewelry | Handcrafted Jewelry in Flagstaff, Arizona</title>
+  <meta
+    name="description"
+    content="Pine Jewelry is a handcrafted jewelry showcase inspired by nature, heirloom details, and the spirit of the historic Wild West."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Pine Jewelry home">
+          <img src="images/pine-jewelry-logo.png" alt="Pine Jewelry logo" class="brand-logo" />
+          <span class="brand-text">Pine Jewelry</span>
+        </a>
 
-    <head>
-        <title>Pine Jewelry</title>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-        <!-- Font Awesome CDN -->
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#story">Story</a>
+          <a href="#craft">Craft</a>
+          <a href="#collections">Collections</a>
+          <a href="#custom">Custom</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#shop">Shop</a>
+        </nav>
+      </div>
+    </header>
 
-        <!-- Bootstrap CDN -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
 
-        <!-- Google Font Link -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Handcrafted in Flagstaff, Arizona</p>
+          <h1>Jewelry shaped by nature, memory, and story.</h1>
+          <p class="hero-copy">
+            Pine Jewelry blends natural textures, antique influence, and modern
+            artistry into pieces that feel deeply personal and impossible to duplicate.
+          </p>
 
-        <!-- My Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#shop">Shop the Collection</a>
+            <a class="btn btn-secondary" href="#story">Explore the Brand</a>
+          </div>
 
-    </head>
+          <div class="hero-note">
+            <span>Since 1993</span>
+            <span>Heirloom-inspired</span>
+            <span>One-of-a-kind details</span>
+          </div>
+        </div>
+      </section>
 
-    <!--  -->
+      <section class="intro section-space">
+        <div class="container intro-grid">
+          <div class="intro-copy reveal">
+            <p class="section-label">About the brand</p>
+            <h2>Every piece carries the character of something discovered.</h2>
+            <p>
+              Our work begins with a love of texture, contrast, and old-world
+              charm. We combine new materials with antiques, reclaimed elements,
+              and thoughtfully selected details to create jewelry that feels
+              storied from the very first wear.
+            </p>
+            <p>
+              Inspired by pine forests, desert air, and the historic spirit of
+              the Southwest, Pine Jewelry was designed for people who want more
+              than accessories. They want pieces with feeling.
+            </p>
 
-    <body>
-    <div id="site">
-
-        <!-- Opening Entire site in Container Fluid -->
-
-        <div class="container-fluid">
-
-            <!-- Logo Section 1 -->
-
-            <section class="section-1">
-
-                <!-- Navbar from bootstrap -->
-
-                <nav class="navbar">
-
-                    <!-- Brand and toggle get grouped for better mobile display -->
-        
-                    
-                    <div class="navbar-header flex-box">
-                    	<div class="navbar-brand-icon-bar">
-                        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                            	<span class="sr-only">Toggle navigation</span>
-                            		<span class="icon-bar"></span>
-                            		<span class="icon-bar"></span>
-                            		<span class="icon-bar"></span>
-                        	</button>
-                    	</div>
-                        <div class="navbar-brand-img">
-                            <a class="navbar-brand-center" href="#"><img alt="Brand" src="mobile-images/pine-jewelry-logo.png"></a>
-                        </div>
-                    </div><!-- .navbar-header -->
-
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-
-                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <ul class="nav navbar-default">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#" id="shop-on-etsy">Shop Etsy</a></li>
-                        </ul>
-                    </div><!-- .navbar-collapse -->
-
-                <!-- Closing of navbar header-->
-                    
-                </nav><!-- .navbar -->
-
-
-            <div id="navbar-body">
-                <header>
-                    <h1>Pine Jewelry</h1>
-                    <p class="space">Hand crafted jewelry made with<br>love in Flagstaff, Arizona</p>
-                    <i class="fa fa-play-circle" aria-hidden="true"></i>
-                    <p class="play-video">Play Video</p>
-                </header>
+            <div class="intro-stats">
+              <div>
+                <strong>30+</strong>
+                <span>Years of craftsmanship</span>
+              </div>
+              <div>
+                <strong>Small Batch</strong>
+                <span>Intentional, detail-driven design</span>
+              </div>
+              <div>
+                <strong>Custom Work</strong>
+                <span>Made for meaningful moments</span>
+              </div>
             </div>
+          </div>
 
-            </section><!-- .section-1 -->
+          <div class="intro-image reveal">
+            <img
+              src="images/woman-key-necklace.jpg"
+              alt="Model wearing a long key necklace against a bright sky"
+            />
+          </div>
+        </div>
+      </section>
 
-            <!-- Section-2 Shop On Etsy -->
+      <section class="bead-band" aria-label="Jewelry texture gallery">
+        <img src="images/beads.jpg" alt="Close-up of hanging beaded jewelry strands" />
+      </section>
 
-            <section class="section-2">
-                	<a href="#" class="shop-on-etsy">Shop on Etsy</a>
-            </section>
+      <section class="story-layout section-space" id="story">
+        <div class="container story-grid">
+          <article class="story-card reveal">
+            <div class="story-media">
+              <img
+                src="images/concrete-wall-1848475_1920.jpg"
+                alt="Close-up portrait highlighting bracelet and necklace craftsmanship"
+              />
+            </div>
+            <div class="story-body">
+              <p class="section-label">Craftsmanship</p>
+              <h3>Made with attention to form, finish, and feeling.</h3>
+              <p>
+                From layered metals to softened leather and textured stones,
+                every Pine Jewelry design is built to feel tactile, balanced,
+                and expressive from every angle.
+              </p>
+            </div>
+          </article>
 
-            <!-- Section-3 -->
+          <article class="story-card reveal">
+            <div class="story-media">
+              <img
+                src="images/vintage-necklace.jpg"
+                alt="Portrait of a model wearing a vintage-inspired pendant necklace"
+              />
+            </div>
+            <div class="story-body">
+              <p class="section-label">Heirloom spirit</p>
+              <h3>Old and new meet in pieces that feel instantly personal.</h3>
+              <p>
+                We love jewelry that carries the softness of memory and the
+                confidence of modern styling. The result is a collection that
+                feels refined, earthy, and distinctly your own.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-            <section class="section-3">
+      <section class="dark-feature section-space" id="craft">
+        <div class="container dark-feature-inner">
+          <div class="dark-feature-copy reveal">
+            <p class="section-label section-label-light">Inspired by place</p>
+            <h2>Our inspiration comes from the forest, the desert, and the historic Wild West.</h2>
+            <p>
+              Pine Jewelry is rooted in contrast: soft and strong, polished and
+              weathered, feminine and untamed. That balance shapes every
+              necklace, bracelet, earring, and ring in the collection.
+            </p>
+          </div>
 
-            	<div class="woman-key-necklace">
-                	<img src="mobile-images/mobile-woman-key-necklace.jpg">
-            	</div><!-- .woman-key-necklace -->
+          <div class="category-grid" id="collections">
+            <article class="category-card reveal">
+              <img src="images/woman-key-necklace.jpg" alt="Model styling layered necklaces" />
+              <div class="category-card-body">
+                <h3>Necklaces</h3>
+                <p>Layered chains, pendant pieces, and delicate statement forms.</p>
+              </div>
+            </article>
 
-                <div class="text-group">
-                	<h2>Every piece is unique<br>tieing in new and old</h2>
-                	<p>Every Pine Jewelry piece is created with great atten-<br>tion to detail using a combination of both new items,<br>antiques, and recycled materials. This means every<br>piece is unique.</p>
-                	<ul>
-                    	<li><i class="fa fa-snowflake-o" aria-hidden="true"></i>
-                    	</li>
-                    	<li><i class="fa fa-star" aria-hidden="true"></i>
-                   		</li>
-                   		<li><i class="fa fa-bicycle" aria-hidden="true"></i>
-                   		</li>
-                   		<li><i class="fa fa-binoculars" aria-hidden="true"></i>
-                   		</li>
-                   		<li><i class="fa fa-leaf" aria-hidden="true"></i>
-                   		</li>
-                   		<li><i class="fa fa-tree" aria-hidden="true"></i>
-                   		</li>
-                   		<li><i class="fa fa-key" aria-hidden="true"></i>
-                   		</li>
+            <article class="category-card reveal">
+              <img src="images/girl-1868930_1920.jpg" alt="Model wearing bold circular earrings" />
+              <div class="category-card-body">
+                <h3>Earrings</h3>
+                <p>Sculptural silhouettes designed to add movement and edge.</p>
+              </div>
+            </article>
 
-                </div>
-            </section>
+            <article class="category-card reveal">
+              <img src="images/indian-792155_1920.jpg" alt="Hands styled with bracelets and rings" />
+              <div class="category-card-body">
+                <h3>Bracelets</h3>
+                <p>Leather wraps, layered textures, and effortless everyday detail.</p>
+              </div>
+            </article>
 
-            <!-- Section 4 Beads Picture -->
+            <article class="category-card reveal">
+              <img src="images/woman-1149911_1920.jpg" alt="Model with a key pendant necklace" />
+              <div class="category-card-body">
+                <h3>Rings</h3>
+                <p>Organic settings and heirloom-inspired shapes made to stand apart.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <section class="section-4">
-                <img src="mobile-images/mobile-beads.jpg">
-            </section>
+      <section class="showcase section-space">
+        <div class="container showcase-grid">
+          <div class="showcase-copy reveal">
+            <p class="section-label">Why Pine Jewelry</p>
+            <h2>Designed for people who want jewelry with character.</h2>
+            <p>
+              This collection is not about trends that disappear in a season.
+              It is about mood, story, and personal style that deepens over time.
+            </p>
 
-            <!-- Section-5 Jewelry hand  -->
+            <ul class="feature-list">
+              <li>Natural, antique, and reclaimed influences</li>
+              <li>Handcrafted small-batch design approach</li>
+              <li>Pieces that layer beautifully and wear effortlessly</li>
+              <li>Custom options for gifts, milestones, and heirloom redesigns</li>
+            </ul>
+          </div>
 
-            <section class="section-5">
-                <h2>We have been hand crafting<br>jewelry since 1993</h2>
-                <p>Our location in historic flagstaff leaves us with access to<br>some of the best natural materials and antiques in the<br>country. We maintain sustainable practices and always<br>think about the environment first.</p>
-                <img src="mobile-images/mobile-concrete-wall-woman-bracelet.jpg">
-                <h2>Custom pieces are available<br>upon request</h2>
-                <p>If you're lookig for a custom item or having an<br>heirloom used to create a new piece, we will work with<br>you to make sure your vision becomes a reality.</p>
-                <img src="mobile-images/mobile-vintage-necklace.jpg" width="768px" height="1152px">
-            </section>
+          <div class="showcase-stack">
+            <img
+              class="reveal"
+              src="images/Screen Shot 2017-03-10 at 10.07.06 AM.png"
+              alt="Brand owner wearing a long necklace in a boutique setting"
+            />
+            <img
+              class="reveal"
+              src="images/mobile-concrete-wall-woman-bracelet.jpg"
+              alt="Close-up of a bracelet worn on the wrist"
+            />
+          </div>
+        </div>
+      </section>
 
-            <!-- Inverted Section -->
+      <section class="custom section-space" id="custom">
+        <div class="container custom-grid">
+          <div class="custom-image reveal">
+            <img
+              src="images/woman-key-necklace.jpg"
+              alt="Model wearing a handcrafted necklace"
+            />
+          </div>
 
-            <section class="section-6">
-                	<h2>Our inspiration comes both from<br>nature, and being in the historic<br>Wild West.</h2>
-                <img src="" width="" height="">
-                	<h3>Necklaces</h3>
-                <p>Long or short
-                    <br>natural or metal
-                    <br>new or old</p>
+          <div class="custom-copy reveal">
+            <p class="section-label">Custom pieces</p>
+            <h2>Have an heirloom or idea you want reimagined?</h2>
+            <p>
+              We offer custom design work for meaningful pieces that deserve a
+              second life. Whether you want a fresh interpretation of a vintage
+              item or a one-of-one gift, we can create something personal,
+              wearable, and lasting.
+            </p>
+            <a class="btn btn-primary" href="#contact">Start a Custom Order</a>
+          </div>
+        </div>
+      </section>
 
-                	<h3>Bracelets</h3>
-                <p>Cuffs, leather,
-                    <br>tied, or spiked</p>
+      <section class="promo section-space" id="shop">
+        <div class="promo-bg" aria-hidden="true"></div>
+        <div class="promo-overlay" aria-hidden="true"></div>
 
-                	<h3>Earings</h3>
-                <p>Sold in pairs
-                    <br>and as singles</p>
+        <div class="container promo-content reveal">
+          <p class="section-label section-label-light">Limited offer</p>
+          <h2>Custom orders now up to 20% off</h2>
+          <p class="promo-code">Use code: <strong>20OFF</strong></p>
+          <p class="promo-text">
+            Discover handcrafted pieces, meaningful gifts, and custom designs
+            inspired by the landscape of the Southwest.
+          </p>
+          <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+            Check Out Our Shop
+          </a>
+        </div>
+      </section>
+    </main>
 
-                	<h3>Rings</h3>
-                <p>Specializing
-                    <br>in custom heirloom
-                    <br>settings</p>
+    <footer class="site-footer section-space" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand reveal">
+          <img src="images/pine-jewelry-logo.png" alt="Pine Jewelry logo" />
+          <h2>Join our mailing list</h2>
+          <p>
+            Be the first to hear about new collections, one-of-a-kind releases,
+            and custom order openings.
+          </p>
+        </div>
 
+        <div class="footer-form-wrap reveal">
+          <form class="signup-form" id="signup-form" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <div class="signup-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autocomplete="off"
+                required
+              />
+              <button type="submit">Keep Me Updated</button>
+            </div>
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+          </form>
 
-            </section>
+          <div class="footer-links">
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">About Pine Jewelry</a>
+            <a href="#">Terms of Service</a>
+          </div>
 
-            <!-- Pine cone section -->
+          <p class="footer-copy">Copyright &copy; 2026 Pine Jewelry. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-            <section class="section-7">
-                	<h2>Custom orders now up to 20% off</h2>
-                	<h4>Coupon code: 20off</h4>
-                <button>Check out our shop</button>
-                <p class="small-text">Check out our Etsy Store</p>
-            </section>
-
-            <!-- footer section -->
-
-            <footer><!-- h3, Email input, email submit, copy/links -->
-            	<form action="/action_page.php">
-            		<input type="email" name="email" placeholder="enter your email">
-            		<input type="submit" value="Submit" placeholder="keep updated">
-            	</form>
-            	<p>Copyright 2017 &copy; Pine Jewelry<br>
-            	Contact Us<br>
-            	FAQs<br>
-            	About Pine Jewelry<br>
-            	Terms of Service</p>
-            </footer>
-
-            
-            </div><!-- Closing Div Container-Fluid -->
-
-
-            <!-- jQuery CDN -->
-
-            <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-            <!-- JavaScript CDN -->
-
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-            
-    </div><!-- Closing #site section -->
-    </body><!-- Closing Body Tag -->
-
+  <script src="script.js"></script>
+</body>
 </html>
