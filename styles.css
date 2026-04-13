@@ -242,7 +242,7 @@ p {
 .hero-bg {
   background:
     linear-gradient(180deg, rgba(10, 21, 28, 0.18), rgba(10, 21, 28, 0.48)),
-    url("fog-1535201_1920.jpg") center center / cover no-repeat;
+    url("images/fog-1535201_1920.jpg") center center / cover no-repeat;
   transform: scale(1.04);
 }
 
@@ -586,7 +586,7 @@ p {
 }
 
 .promo-bg {
-  background: url("pine-cone-788119_1920.jpg") center center / cover no-repeat;
+  background: url("images/pine-cone-788119_1920.jpg") center center / cover no-repeat;
 }
 
 .promo-overlay {
